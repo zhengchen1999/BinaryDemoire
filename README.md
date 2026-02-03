@@ -12,7 +12,7 @@
 
 #### 🔥🔥🔥 News
 
-- **2025-10-05:** This repo is released.
+- **2025-02-04:** This repo is released.
 
 ---
 
@@ -56,7 +56,7 @@
 <p align="center">
   <img width="900" src="figs/supp.png">
 </p>
-
+</details>
 
 ## <a name="citation"></a>📎 Citation
 
@@ -70,3 +70,8 @@ If you find the code helpful in your research or work, please cite our work.
     year={2026}
 }
 ```
+
+
+## <a name="acknowledgements"></a>💡 Acknowledgements
+
+This project is based on [ESDNet](https://github.com/CVMI-Lab/UHDM), [BBCU](https://github.com/Zj-BinXia/BBCU), and [Bi-DiffSR](https://github.com/zhengchen1999/BI-DiffSR).
