@@ -1,6 +1,6 @@
 # Project: BinaryDemoire
 
-https://github.com/zhengchen1999/BinaryDemoire
+https://zheng-chen.cn/BinaryDemoire/
 
 A binarization framework tailored to demoiréing
 
