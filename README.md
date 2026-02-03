@@ -1,8 +1,8 @@
 # Project: BinaryDemoire
 
-https://zheng-chen.cn/BinaryDemoire/
+https://github.com/zhengchen1999/BinaryDemoire
 
-A post-training quantization framework tailored to demoiréing
+A binarization framework tailored to demoiréing
 
 ## Acknowledgments
 

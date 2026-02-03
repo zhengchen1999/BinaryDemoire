@@ -4,18 +4,18 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="QuantDemoire: Quantization with Outlier Aware for Image Demoiréing">
-  <meta property="og:title" content="QuantDemoire: Quantization with Outlier Aware for Image Demoiréing"/>
-  <meta property="og:description" content="A post-training quantization framework tailored to demoiréing"/>
-  <meta property="og:url" content="https://zheng-chen.cn/QuantDemoire/"/>
+  <meta name="description" content="BinaryDemoire: Moiré-Aware Binarization for Image Demoiréing">
+  <meta property="og:title" content="BinaryDemoire: Moiré-Aware Binarization for Image Demoiréing"/>
+  <meta property="og:description" content="A binarization framework tailored to demoiréing"/>
+  <meta property="og:url" content="https://github.com/zhengchen1999/BinaryDemoire/"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/figs/QuantDemoire_banner.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
 
-  <meta name="twitter:title" content="QuantDemoire: Quantization with Outlier Aware for Image Demoiréing">
-  <meta name="twitter:description" content="A post-training quantization framework tailored to demoiréing">
+  <meta name="twitter:title" content="BinaryDemoire: Moiré-Aware Binarization for Image Demoiréing">
+  <meta name="twitter:description" content="A binarization framework tailored to demoiréing">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
   <meta name="twitter:image" content="static/figs/QuantDemoire_twitter_banner.png">
   <meta name="twitter:card" content="summary_large_image">
@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>QuantDemoire: Quantization with Outlier Aware for Image Demoiréing</title>
+  <title>BinaryDemoire: Moiré-Aware Binarization for Image Demoiréing</title>
   <link rel="icon" type="image/x-icon" href="static/figs/zhengchen.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -46,6 +46,262 @@
 </head>
 <body>
 
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">BinaryDemoire: Moiré-Aware Binarization for Image Demoiréing</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://zheng-chen.cn" target="_blank">Zheng Chen<sup>1</sup></a><sup>*</sup></span>
+              <span class="author-block">
+                <a href="https://github.com/yandzhi" target="_blank">Zhi Yang<sup>1</sup></a><sup>*</sup></span>
+              <span class="author-block">
+                <a href="https://xyliu339.github.io/" target="_blank">Xiaoyang Liu<sup>1</sup></a>,</span>
+              <span class="author-block">
+                <a href="" target="_blank">Weihang Zhang<sup>2</sup></a>,</span>
+              <span class="author-block">
+                <a href="" target="_blank">Mengfan Wang<sup>3</sup></a>,</span>
+              <span class="author-block">
+                <a href="" target="_blank">Yifan Fu<sup>2</sup></a>,</span>
+                <br>
+                <span class="author-block">
+                <a href="" target="_blank">Linghe Kong<sup>1</sup></a>,</span>
+              <span class="author-block">
+                <a href="http://yulunzhang.com/" target="_blank">Yulun Zhang<sup>1</sup></a><sup>†</sup></span>
+            </div>
+            
+            <div class="is-size-5 publication-institutions">
+              <!-- Institutions -->
+              <span class="institution-block">
+                <sup>1</sup>Shanghai Jiao Tong University,
+                <sup>2</sup>Tsinghua University
+                <sup>3</sup>Virginia Polytechnic Institute and State University
+              </span>
+              <span class="coorespond">
+                <small><br>
+                  <sup>*</sup>Indicates Equal Contribution. <sup>†</sup>Indicates Corresponding Author
+                </small>
+              </span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+            
+                <!-- ArXiv abstract link -->
+                <span class="link-block">
+                    <!-- arXiv link待定 -->
+                  <a href="https://arxiv.org/abs/2510.04066" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                  </a>
+                </span>
+            
+                <!-- Supplementary PDF link -->
+                <span class="link-block">
+                    <!-- 待定 -->
+                  <a href="https://github.com/zhengchen1999/QuantDemoire/releases/download/v1/Supplementary_Material.pdf" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Supplementary</span>
+                  </a>
+                </span>
+            
+                <!-- Github link -->
+                <span class="link-block">
+                    <!-- 待定 -->
+                  <a href="https://github.com/zhengchen1999/BinaryDemoire/" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Example Section-->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-sixths">
+        <figure>
+            <!-- 对比图待定 -->
+          <img src="static/figs/compare.png" alt="QuantDemoire Example Illustration">
+        </figure>
+        <div class="content has-text-justified" style="margin-top: 1rem;">
+          <p>
+            Visual comparison of binarization methods. Our proposed <strong>BinaryDemoire</strong> outperforms other methods with accurate results.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Example Section-->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Image demoiréing aims to remove structured moiré artifacts in recaptured imagery, where degradations are highly frequency-dependent and vary across scales and directions. While recent deep networks achieve high-quality restoration, their full-precision designs remain costly for deployment. Binarization offers an extreme compression regime by quantizing both activations and weights to 1-bit. Yet, it has been rarely studied for demoiréing and performs poorly when naively applied. In this work, we propose <strong>BinaryDemoire</strong>, a binarized demoiréing framework that explicitly accommodates the frequency structure of moiré degradations. First, we introduce a moiré-aware binary gate (MABG) that extracts lightweight frequency descriptors together with activation statistics. It predicts channel-wise gating coefficients to condition the aggregation of binary convolution responses. Second, we design a shuffle-grouped residual adapter (SGRA) that performs structured sparse shortcut alignment. It further integrates interleaved mixing to promote information exchange across different channel partitions. Extensive experiments on four benchmarks demonstrate that the proposed BinaryDemoire outperforms the state-of-the-art binarization methods.
+          </p>
+
+         
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Method Section-->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-sixths">
+        <h2 class="title is-3 has-text-left">Method</h2>
+        <figure>
+          <img src="static/figs/method.png" alt="BinaryDemoire Overview">
+          <figcaption class="title is-5">BinaryDemoire Overview</figcaption>
+        </figure>
+        <div class="content has-text-justified" style="margin-top: 1rem;">
+          <p> BinaryDemoire consists of two key components: <strong>(1) Moiré-aware binary gate (MABG): </strong> Adapts binary activation through frequency and statistical descriptors; <strong>(2) Shuffle-grouped residual adapter (SGRA): </strong> Provides lightweight residual alignment across channel and spatial dimensions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Method Section-->
+
+<!-- Performance Section-->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-sixths">
+        <h2 class="title is-3 has-text-left">Performance</h2>
+        <figure>
+          <img src="static/figs/performance-chart.png" alt="QuantDemoire Performance Comparison">
+          <figcaption class="title is-5">Performance Comparison With Other Binarization Methods And Full-precision Method</figcaption>
+        </figure>
+        <div class="content has-text-justified" style="margin-top: 1rem;">
+          <p>
+            BinaryDemoire outperforms existing Binarization methods across multiple metrics.BinaryDemoire uses 0.31M parameters and 0.78G OPs, which correspond to only <strong>5.2%</strong> of the full-precision base model parameters and <strong>4.4%</strong> of its OPs.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Performance Section-->
+
+<!-- Results Section -->
+<section class="section hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-left">
+        <div class="column is-five-sixths">
+          <h2 class="title is-3">Results</h2>
+          <details open>
+            <summary class="title is-5">Quantitative Results (click to expand)</summary>
+            <div class="content">
+              <ul><li class="title is-6">Quantitative Results (Tab. 2 of the main paper)</li></ul>
+              <p class="has-text-centered">
+                <img src="static/figs/quantitative.png" >
+              </p>
+            </div>
+          </details>
+          <details open>
+            <summary class="title is-5">Qualitative Results (click to expand)</summary>
+            <div class="content">
+              <ul><li class="title is-6">Visual Results (Fig. 7 of the main paper)</li></ul>
+              <p class="has-text-centered">
+                <img src="static/figs/visual.png" >
+              </p>
+              <ul>
+                <details>
+                  <summary class="title is-6" style="margin-left: -0.8em;">More Results (click to expand)</summary>
+                  <div class="content">
+                    <ul><li class="title is-6">More results (Fig. 3 of the supplementary material)</li></ul>
+                    <p class="has-text-centered">
+                      <img src="static/figs/supp.png" >
+                
+                    </p>
+                  </div>
+                </details>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Results Section -->
+
+<!-- BibTeX citation -->
+<section class="section hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-left">
+      <div class="column is-five-sixths">
+        <h2 class="title">BibTeX</h2>
+        <pre style="background-color: #ffffff; overflow-x: auto; white-space: pre-wrap;">
+<code>@inproceedings{chen2025quantdemoire,
+    title={QuantDemoire: Quantization with Outlier Aware for Image Demoiréing},
+    author={Chen, Zheng and Zhang, Kewei and Liu, Xiaoyang and Zhang, Weihang and Wang, Mengfan and Fu, Yifan and Zhang, Yulun},
+    journal={arXiv preprint arXiv:2510.04066},
+    year={2025}
+}</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End BibTeX citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
 
   </body>
   </html>
