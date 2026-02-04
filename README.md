@@ -7,8 +7,7 @@
 <a href="https://github.com/zhengchen1999/BinaryDemoire" target='_blank' style="text-decoration: none;"><img src="https://visitor-badge.laobi.icu/badge?page_id=zhengchen1999/BinaryDemoire"></a>
 <a href="https://github.com/zhengchen1999/BinaryDemoire/stargazers" target='_blank' style="text-decoration: none;"><img src="https://img.shields.io/github/stars/zhengchen1999/BinaryDemoire?style=social"></a>
 </div>
-
-[[arXiv](https://arxiv.org/abs/2510.04066)] [[supplementary material](https://github.com/zhengchen1999/BinaryDemoire/releases/download/v1/Supplementary_Material.pdf)] [[project](https://zheng-chen.cn/BinaryDemoire/)]
+[[arXiv](http://arxiv.org/abs/2602.03176)] [[supplementary material](https://github.com/zhengchen1999/BinaryDemoire/releases/download/v1/Supplementary_Material.pdf)] [[project](https://zheng-chen.cn/BinaryDemoire/)]
 
 #### 🔥🔥🔥 News
 
@@ -63,10 +62,10 @@
 If you find the code helpful in your research or work, please cite our work.
 
 ```
-@inproceedings{chen2026binarydemoire,
+@article{chen2026binarydemoire,
     title={BinaryDemoire: Moiré-Aware Binarization for Image Demoiréing},
     author={Chen, Zheng and Zhang, Kewei and Liu, Xiaoyang and Zhang, Weihang and Wang, Mengfan and Fu, Yifan, and Kong, Linghe and Zhang, Yulun},
-    journal={},
+    journal={arXiv preprint arXiv:2602.03176},
     year={2026}
 }
 ```
