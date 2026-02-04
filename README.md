@@ -68,7 +68,7 @@ If you find the code helpful in your research or work, please cite our work.
 ```
 @article{chen2026binarydemoire,
     title={BinaryDemoire: Moiré-Aware Binarization for Image Demoiréing},
-    author={Chen, Zheng and Zhang, Kewei and Liu, Xiaoyang and Zhang, Weihang and Wang, Mengfan and Fu, Yifan, and Kong, Linghe and Zhang, Yulun},
+    author={Chen, Zheng and Yang, Zhi and Liu, Xiaoyang and Zhang, Weihang and Wang, Mengfan and Fu, Yifan and Kong, Linghe and Zhang, Yulun},
     journal={arXiv preprint arXiv:2602.03176},
     year={2026}
 }
