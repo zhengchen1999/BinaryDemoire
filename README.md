@@ -7,7 +7,11 @@
 <a href="https://github.com/zhengchen1999/BinaryDemoire" target='_blank' style="text-decoration: none;"><img src="https://visitor-badge.laobi.icu/badge?page_id=zhengchen1999/BinaryDemoire"></a>
 <a href="https://github.com/zhengchen1999/BinaryDemoire/stargazers" target='_blank' style="text-decoration: none;"><img src="https://img.shields.io/github/stars/zhengchen1999/BinaryDemoire?style=social"></a>
 </div>
+
+
 [[arXiv](http://arxiv.org/abs/2602.03176)] [[supplementary material](https://github.com/zhengchen1999/BinaryDemoire/releases/download/v1/Supplementary_Material.pdf)] [[project](https://zheng-chen.cn/BinaryDemoire/)]
+
+
 
 #### 🔥🔥🔥 News
 
