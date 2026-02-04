@@ -9,7 +9,7 @@
 </div>
 
 
-[[arXiv](http://arxiv.org/abs/2602.03176)] [[supplementary material](https://github.com/zhengchen1999/BinaryDemoire/releases/download/v1/Supplementary_Material.pdf)] [[project](https://zheng-chen.cn/BinaryDemoire/)]
+[[project](https://zheng-chen.cn/BinaryDemoire/)] [[arXiv](http://arxiv.org/abs/2602.03176)] [[supplementary material](https://github.com/zhengchen1999/BinaryDemoire/releases/download/v1/Supplementary_Material.pdf)]
 
 
 
